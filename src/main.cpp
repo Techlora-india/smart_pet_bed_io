@@ -298,6 +298,7 @@ void handleBootButton() {
 
         if (!longPressHandled && held >= DEBOUNCE_MS && held < LONG_PRESS_MS) {
             sendBootAck();
+            check_ota(otaConfig); 
         }
     }
 }
