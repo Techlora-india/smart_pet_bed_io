@@ -1,4 +1,4 @@
-.pio
+
 .cache
 .dummy
 .vscode/.browse.c_cpp.db*
@@ -6,3 +6,19 @@
 .vscode/launch.json
 .vscode/ipch
 compile_commands.json
+
+
+# 1. Allow Git into the .pio directory, but ignore everything directly inside it
+!.pio/
+.pio/*
+
+# 2. Allow Git into the build directory, but ignore everything directly inside it
+!.pio/build/
+.pio/build/*
+
+# 3. Allow Git into the seeed_xiao_esp32c3 directory, but ignore everything directly inside it
+!.pio/build/esp32dev/
+.pio/build/esp32dev/*
+
+# 4. Explicitly allow ONLY the firmware.bin file
+!.pio/build/esp32dev/firmware.bin
