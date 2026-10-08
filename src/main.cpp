@@ -13,9 +13,9 @@
 // ===================== OTA CONFIGURATION =====================
 const int   CURRENT_VERSION = 1;
 const char* VERSION_URL  =
-    "https://raw.githubusercontent.com/Techlora-india/kitchen_inventory_management/main/kitchent_inventory_io/var.txt";
+    "https://raw.githubusercontent.com/Techlora-india/smart_pet_bed_io/main/var.txt";
 const char* FIRMWARE_URL =
-    "https://raw.githubusercontent.com/Techlora-india/kitchen_inventory_management/main/kitchent_inventory_io/.pio/build/seeed_xiao_esp32c3/firmware.bin";
+    "https://raw.githubusercontent.com/Techlora-india/smart_pet_bed_io/main/.pio/build/esp32dev/firmware.bin";
 
 // Hardcoded device ID (baked into firmware)
 #define DEVICE_ID  "petbed-001"
