@@ -19,11 +19,11 @@
 #endif
 
 // ===================== OTA CONFIGURATION =====================
-const int   CURRENT_VERSION = 1;
+const int   CURRENT_VERSION = 2;
 const char* VERSION_URL  =
     "https://raw.githubusercontent.com/Techlora-india/smart_pet_bed_io/main/var.txt";
 const char* FIRMWARE_URL =
-    "https://raw.githubusercontent.com/Techlora-india/smart_pet_bed_io/main/.pio/build/esp32dev/firmware.factory.bin";
+    "https://raw.githubusercontent.com/Techlora-india/smart_pet_bed_io/main/.pio/build/esp32dev/firmware.bin";
 
 // Set these through PlatformIO build_flags or a private include/secrets.h.
 #ifndef CLOUDBASE_SYNC_URL
@@ -36,7 +36,7 @@ const char* FIRMWARE_URL =
 #define CLOUDBASE_CA_CERT ""
 #endif
 #ifndef ENABLE_LEGACY_OTA
-#define ENABLE_LEGACY_OTA 0
+#define ENABLE_LEGACY_OTA 1
 #endif
 
 // Populated at runtime in setup()
