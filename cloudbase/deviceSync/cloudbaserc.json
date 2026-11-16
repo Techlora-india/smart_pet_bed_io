@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.cloudbase.net/cli/cloudbaserc.schema.json",
+  "envId": "disturbed-tahr-d3g08log18aceacb6",
+  "functions": [
+    {
+      "name": "deviceSync",
+      "dir": ".",
+      "type": "HTTP",
+      "runtime": "Nodejs20.19",
+      "handler": "index.main",
+      "timeout": 15,
+      "memorySize": 256,
+      "installDependency": true,
+      "public": true,
+      "gatewayPath": "/deviceSync"
+    }
+  ]
+}
